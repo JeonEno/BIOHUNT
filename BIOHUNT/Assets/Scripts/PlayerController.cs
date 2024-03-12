@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         //Time gap between shots fire
         if(Input.GetMouseButton(0))
         {
-            float moveSpeed = 4f;
+            float moveSpeed = 3f;
             
             rb2D.velocity = moveInput * moveSpeed;
 
