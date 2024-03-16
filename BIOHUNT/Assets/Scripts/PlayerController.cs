@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public float timeGapShots;
     private float shotCounter;
 
+    public Animator anim;
+
     private void Awake() 
     {
         instance = this;
@@ -59,6 +61,15 @@ public class PlayerController : MonoBehaviour
         Vector2 offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
         float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
         gunPivot.rotation = Quaternion.Euler(0, 0, angle);
+
+        if(moveInput != Vector2.zero)
+        {
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
 
         //fire Bullet
         if(Input.GetMouseButtonDown(0))

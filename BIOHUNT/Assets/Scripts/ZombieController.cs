@@ -10,6 +10,8 @@ public class ZombieController : MonoBehaviour
     public float rangeToChasePlayer;
     private Vector3 moveDirection;
 
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +33,15 @@ public class ZombieController : MonoBehaviour
         moveDirection.Normalize();
 
         theRB.velocity = moveDirection * moveSpeed;
+
+
+        if(moveDirection != Vector3.zero)
+        {
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
     }
 }
