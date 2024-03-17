@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class ZombieController : MonoBehaviour
 {
+    [Header("Component")]
     public Rigidbody2D theRB;
-    public float moveSpeed;
 
+    [Header("Movement Value")]
+    public float moveSpeed;
     public float rangeToChasePlayer;
     private Vector3 moveDirection;
 
+    [Header("Animation")]
     public Animator anim;
+
+    [Header("Health")]
+    public int health = 150;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +48,18 @@ public class ZombieController : MonoBehaviour
         else
         {
             anim.SetBool("isMoving", false);
+        }
+    }
+
+    public void DamageEnemy(int damage)
+    {
+        health -= damage;
+
+        if(health <= 0)
+        {
+            anim.SetTrigger("isDead");
+
+            //Destroy(gameObject);
         }
     }
 }
