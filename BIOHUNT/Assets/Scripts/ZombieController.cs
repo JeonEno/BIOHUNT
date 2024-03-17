@@ -11,6 +11,7 @@ public class ZombieController : MonoBehaviour
     public float moveSpeed;
     public float rangeToChasePlayer;
     private Vector3 moveDirection;
+    private SpriteRenderer spRenderer;
 
     [Header("Animation & Effect")]
     public Animator anim;
