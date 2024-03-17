@@ -9,6 +9,8 @@ public class PlayerBullet : MonoBehaviour
     public Rigidbody2D bulletRB;
     public GameObject impactEffect;
 
+    public int damageOfBullet = 50;
+
     // Update is called once per frame
     void Update()
     {
@@ -19,6 +21,8 @@ public class PlayerBullet : MonoBehaviour
     {
         Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(gameObject);
+
+        other.GetComponent<ZombieController>().DamageEnemy(damageOfBullet);
     }
 
     private void OnBecameInvisible() 
