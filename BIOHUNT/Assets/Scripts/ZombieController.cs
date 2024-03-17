@@ -12,8 +12,9 @@ public class ZombieController : MonoBehaviour
     public float rangeToChasePlayer;
     private Vector3 moveDirection;
 
-    [Header("Animation")]
+    [Header("Animation & Effect")]
     public Animator anim;
+    public GameObject gotHitEffect;
 
     [Header("Health")]
     public int health = 150;
@@ -55,11 +56,12 @@ public class ZombieController : MonoBehaviour
     {
         health -= damage;
 
+        Instantiate(gotHitEffect, transform.position, transform.rotation);
+
         if(health <= 0)
         {
+            moveSpeed = 0;
             anim.SetTrigger("isDead");
-
-            //Destroy(gameObject);
         }
     }
 }
