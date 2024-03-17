@@ -22,7 +22,10 @@ public class PlayerBullet : MonoBehaviour
         Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(gameObject);
 
-        other.GetComponent<ZombieController>().DamageEnemy(damageOfBullet);
+        if(other.tag == "Enemy")
+        {
+            other.GetComponent<ZombieController>().DamageEnemy(damageOfBullet);
+        }
     }
 
     private void OnBecameInvisible() 
