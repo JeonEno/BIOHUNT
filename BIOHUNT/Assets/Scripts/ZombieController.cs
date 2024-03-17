@@ -37,11 +37,11 @@ public class ZombieController : MonoBehaviour
 
         if(moveDirection != Vector3.zero)
         {
-            anim.SetBool("isWalking", true);
+            anim.SetBool("isMoving", true);
         }
         else
         {
-            anim.SetBool("isWalking", false);
+            anim.SetBool("isMoving", false);
         }
     }
 }

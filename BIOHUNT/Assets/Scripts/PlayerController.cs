@@ -64,11 +64,11 @@ public class PlayerController : MonoBehaviour
 
         if(moveInput != Vector2.zero)
         {
-            anim.SetBool("isRunning", true);
+            anim.SetBool("isMoving", true);
         }
         else
         {
-            anim.SetBool("isRunning", false);
+            anim.SetBool("isMoving", false);
         }
 
         //fire Bullet
