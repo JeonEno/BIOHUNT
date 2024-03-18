@@ -11,7 +11,7 @@ public class ZombieController : MonoBehaviour
     public float moveSpeed;
     public float rangeToChasePlayer;
     private Vector3 moveDirection;
-    private SpriteRenderer spRenderer;
+    public SpriteRenderer spRenderer;
 
     [Header("Animation & Effect")]
     public Animator anim;
@@ -32,6 +32,11 @@ public class ZombieController : MonoBehaviour
         if(Vector3.Distance(transform.position, PlayerController.instance.transform.position) < rangeToChasePlayer)
         {
             moveDirection = PlayerController.instance.transform.position - transform.position;
+
+            if (moveDirection.x > 0)
+                spRenderer.flipX = false; // Face right
+            else if (moveDirection.x < 0)
+                spRenderer.flipX = true; // Face left
         }
         else
         {
