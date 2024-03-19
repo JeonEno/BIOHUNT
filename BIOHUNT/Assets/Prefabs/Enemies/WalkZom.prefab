@@ -98,7 +98,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.012197137, y: -0.0072668195}
@@ -170,9 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theRB: {fileID: 8657765386556110426}
   moveSpeed: 3
-  rangeToChasePlayer: 9
+  rangeToChasePlayer: 10
   spRenderer: {fileID: 8657765386556110428}
   anim: {fileID: 8657765386556110429}
   gotHitEffect: {fileID: 1394904678961071107, guid: 79fe5790ff6b3f443bdb5e56b2cbc802, type: 3}
   health: 150
-  damageInterval: 1
