@@ -86,7 +86,17 @@ public class PlayerController : MonoBehaviour
         //Time gap between shots fire
         if(Input.GetMouseButton(0))
         {
-            float moveSpeed = 3f;
+            if(moveInput != Vector2.zero)
+            {
+                anim.SetBool("isMoving", false);
+                anim.SetBool("isShooting", true);
+            }
+            else
+            {
+                anim.SetBool("isShooting", false);
+            }
+
+            float moveSpeed = 2f;
             
             rb2D.velocity = moveInput * moveSpeed;
 
@@ -97,6 +107,11 @@ public class PlayerController : MonoBehaviour
                 Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
                 shotCounter = timeGapShots;
             }
+        }
+        else
+        {
+            // anim.SetBool("isMoving", true);
+            anim.SetBool("isShooting", false);
         }
     }
 }

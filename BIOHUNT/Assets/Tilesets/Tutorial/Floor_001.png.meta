@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da8c6bdfef24eaf4382e8df980a311c7
-      internalID: -950430560
+      spriteID: bc0042e56e19ed344a0ca60442ce7e4d
+      internalID: -1656762919
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db0ee7ede48fba34ba715d627b754798
-      internalID: -977380105
+      spriteID: 4d17bc3208481b541a80923b21f7b469
+      internalID: -31830205
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a755da448ba97ad48b5eb2ab9d1b751f
-      internalID: -1571593557
+      spriteID: 200a78cc7f0acc749aef17bc78d22698
+      internalID: -1416276953
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6e37f2a1da4c1142adddb8e18432e46
-      internalID: 1931183433
+      spriteID: d03b980a3d7df3e43bfa38f461ffc8f3
+      internalID: 1591549595
       vertices: []
       indices: 
       edges: []
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d801771f7686cc40b2d0c1b71eae602
-      internalID: -1098028306
+      spriteID: 8833d646040619749a237526f86571b0
+      internalID: 876270754
       vertices: []
       indices: 
       edges: []
@@ -236,155 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e06dc52260900854fa582964de0294c5
-      internalID: -1615950146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_001_6
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07e139a55564caa498e5d1231daf5d5d
-      internalID: 1164835929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_001_7
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3897aaea1daea44b90b22125ab2d18e
-      internalID: 221924370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_001_8
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 105a9b42723ff9348aed94dc5a116ab7
-      internalID: 397512743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_001_9
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e010b31fb0930dd4890c5b9d75900613
-      internalID: 1944991066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_001_10
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5dd4cc1ca3b2484e8c1c2ecdb5cf55d
-      internalID: 922142692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_001_11
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f90304764c8f45243a1ad1a22a51d4c7
-      internalID: -86364918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_001_12
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8565c311c041d84594909190c8e8403
-      internalID: 1564108103
+      spriteID: 00a2f90f4f7b0ff409d8f5dc263e03e5
+      internalID: 2116102918
       vertices: []
       indices: 
       edges: []
@@ -400,19 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Floor_001_0: -950430560
-      Floor_001_1: -977380105
-      Floor_001_10: 922142692
-      Floor_001_11: -86364918
-      Floor_001_12: 1564108103
-      Floor_001_2: -1571593557
-      Floor_001_3: 1931183433
-      Floor_001_4: -1098028306
-      Floor_001_5: -1615950146
-      Floor_001_6: 1164835929
-      Floor_001_7: 221924370
-      Floor_001_8: 397512743
-      Floor_001_9: 1944991066
+      Floor_001_0: -1656762919
+      Floor_001_1: -31830205
+      Floor_001_2: -1416276953
+      Floor_001_3: 1591549595
+      Floor_001_4: 876270754
+      Floor_001_5: 2116102918
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
