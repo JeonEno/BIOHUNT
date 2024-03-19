@@ -19,6 +19,8 @@ public class ZombieController : MonoBehaviour
 
     [Header("Health")]
     public int health = 150;
+    public float damageInterval = 1f; // Interval between each damage to the player
+    private float damageTimer = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,7 @@ public class ZombieController : MonoBehaviour
         {
             moveDirection = PlayerController.instance.transform.position - transform.position;
 
+            // flip zombie sprite to face forward where they move
             if (moveDirection.x > 0)
                 spRenderer.flipX = false; // Face right
             else if (moveDirection.x < 0)
@@ -47,7 +50,7 @@ public class ZombieController : MonoBehaviour
 
         theRB.velocity = moveDirection * moveSpeed;
 
-
+        // move animation
         if(moveDirection != Vector3.zero)
         {
             anim.SetBool("isMoving", true);
@@ -58,6 +61,7 @@ public class ZombieController : MonoBehaviour
         }
     }
 
+    // enemy damaged system
     public void DamageEnemy(int damage)
     {
         health -= damage;
@@ -68,6 +72,15 @@ public class ZombieController : MonoBehaviour
         {
             moveSpeed = 0;
             anim.SetTrigger("isDead");
+        }
+    }
+    
+    // damage to player
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealthManager.instance.DamagePlayer();
         }
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8657765386556110426}
   - component: {fileID: 8657765386556110429}
   - component: {fileID: 8657765386556110425}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: WalkZom
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 891423062, guid: a7d5aadbdf3216e4082013a55c0e42be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008662999, y: -0.017696768}
+  m_Offset: {x: 0.012197137, y: -0.0072668195}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5610925, y: 0.8182027}
+  m_Size: {x: 0.6862545, y: 1.0059457}
   m_EdgeRadius: 0
 --- !u!50 &8657765386556110426
 Rigidbody2D:
@@ -133,7 +133,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &8657765386556110429
 Animator:
@@ -175,3 +175,4 @@ MonoBehaviour:
   anim: {fileID: 8657765386556110429}
   gotHitEffect: {fileID: 1394904678961071107, guid: 79fe5790ff6b3f443bdb5e56b2cbc802, type: 3}
   health: 150
+  damageInterval: 1
