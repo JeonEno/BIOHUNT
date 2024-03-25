@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8657765386556110407}
   - component: {fileID: 8657765386556110428}
-  - component: {fileID: 8657765386556110424}
   - component: {fileID: 8657765386556110426}
+  - component: {fileID: 8657765386556110424}
   - component: {fileID: 8657765386556110429}
   - component: {fileID: 8657765386556110425}
   m_Layer: 9
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8657765386556110406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.3, y: 0.65, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,6 +88,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &8657765386556110426
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8657765386556110406}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!61 &8657765386556110424
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -114,27 +135,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6862545, y: 1.0059457}
   m_EdgeRadius: 0
---- !u!50 &8657765386556110426
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8657765386556110406}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
 --- !u!95 &8657765386556110429
 Animator:
   serializedVersion: 5
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theRB: {fileID: 8657765386556110426}
   moveSpeed: 3
-  rangeToChasePlayer: 10
+  rangeToChasePlayer: 12
   spRenderer: {fileID: 8657765386556110428}
   anim: {fileID: 8657765386556110429}
   gotHitEffect: {fileID: 1394904678961071107, guid: 79fe5790ff6b3f443bdb5e56b2cbc802, type: 3}
