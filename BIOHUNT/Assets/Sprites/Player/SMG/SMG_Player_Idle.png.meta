@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c4f9be7591312741bce20ecebdad27f
+guid: ef3027e419935824f822aecfc84183e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerWalking_0
+      name: SMG_Player_Idle_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 10
-        height: 14
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b68680535c715ec42add1ee2ce9741db
-      internalID: 492463468
+      spriteID: 0f50dff0f8df5954f953d8f63403ac4b
+      internalID: 1919589375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerWalking_1
+      name: SMG_Player_Idle_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1
-        width: 10
-        height: 15
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cada49d9b9badf94f9fd3c5b88450597
-      internalID: -1047190500
+      spriteID: e65d9b05842a9b047a4f311747c57533
+      internalID: 296627609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerWalking_2
+      name: SMG_Player_Idle_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 1
-        width: 10
-        height: 14
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a956491d958efa044ac563f46f0adc60
-      internalID: 2119309401
+      spriteID: a70e2ee6a12713f47b3c494b98790a28
+      internalID: -1376520774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerWalking_3
+      name: SMG_Player_Idle_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 1
-        width: 10
-        height: 14
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a164319e9c162ad4fb33fd6e06ddd93a
-      internalID: 753152
+      spriteID: aabbdc73d12954f4da048ce7bda9ae00
+      internalID: -246453283
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerWalking_0: 492463468
-      PlayerWalking_1: -1047190500
-      PlayerWalking_2: 2119309401
-      PlayerWalking_3: 753152
+      SMG_Player_Idle_0: 1919589375
+      SMG_Player_Idle_1: 296627609
+      SMG_Player_Idle_2: -1376520774
+      SMG_Player_Idle_3: -246453283
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bb962f62a7369e47aa2c6cddf90a265
+guid: 049e663306550354882ce3bb4c89d80f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerWalking_0
+      name: SMG_Player_Run_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 10
-        height: 13
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc5bf17d70b582541aaf952c685ee491
-      internalID: 1042802163
+      spriteID: 9bd05ed87cfa7274d8340124061dbf13
+      internalID: 1612142891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerWalking_1
+      name: SMG_Player_Run_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1
-        width: 10
-        height: 13
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40acdac657b405348b07e1cb07b32028
-      internalID: 272518913
+      spriteID: dcf673ca060435e4a91a4df905c81e2e
+      internalID: 1646088179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerWalking_2
+      name: SMG_Player_Run_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 1
-        width: 10
-        height: 13
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56002c7ad27e1e34aaa0fb2c031889e1
-      internalID: -865598194
+      spriteID: da89022c6eb6b1d468f3ddb51eeb52e4
+      internalID: 570651328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerWalking_3
+      name: SMG_Player_Run_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 1
-        width: 10
-        height: 14
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd854900029b3274aaa6ed9b8a69fc99
-      internalID: 1027208561
+      spriteID: 9ec64bc15e4c3574e81aef9ca60a15f8
+      internalID: 788926220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerWalking_4
+      name: SMG_Player_Run_4
       rect:
         serializedVersion: 2
-        x: 67
-        y: 1
-        width: 10
-        height: 15
+        x: 64
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,29 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ccf3b23f710c2c4aadc5316242f1ee1
-      internalID: 867016586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerWalking_5
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 1
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9457ea8abe710294f9f61e454007b8d9
-      internalID: 1898860161
+      spriteID: a14204a6c62ab084f882236aaa823f37
+      internalID: 48338111
       vertices: []
       indices: 
       edges: []
@@ -253,12 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerWalking_0: 1042802163
-      PlayerWalking_1: 272518913
-      PlayerWalking_2: -865598194
-      PlayerWalking_3: 1027208561
-      PlayerWalking_4: 867016586
-      PlayerWalking_5: 1898860161
+      SMG_Player_Run_0: 1612142891
+      SMG_Player_Run_1: 1646088179
+      SMG_Player_Run_2: 570651328
+      SMG_Player_Run_3: 788926220
+      SMG_Player_Run_4: 48338111
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
