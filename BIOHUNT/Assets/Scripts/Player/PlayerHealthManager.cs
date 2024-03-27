@@ -35,7 +35,8 @@ public class PlayerHealthManager : MonoBehaviour
         
         if(currentHealth <= 0)
         {
-            PlayerController.instance.gameObject.SetActive(false);
+            //PlayerController.instance.gameObject.SetActive(false);
+            PlayerController.instance.anim.SetTrigger("isDead");
         }
 
         UIController.instance.healthSlider.maxValue = maxHealth;
