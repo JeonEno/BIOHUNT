@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletRB: {fileID: 7785511041751918896}
   impactEffect: {fileID: 8712463657793631325, guid: aefe2390da1bd6b4cb6ebf83a4d38eb8, type: 3}
-  bulletSpeed: 40
+  bulletSpeed: 30
   damageOfBullet: 30
 --- !u!61 &-5235647106820581473
 BoxCollider2D:
