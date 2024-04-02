@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ZombieController : MonoBehaviour
@@ -77,7 +78,14 @@ public class ZombieController : MonoBehaviour
         {
             moveSpeed = 0;
             anim.SetTrigger("isZomDead");
+            StartCoroutine(WaitForDead());
         }
+    }
+
+    IEnumerator WaitForDead() 
+    {
+        yield return new WaitForSeconds(1.1f);
+        Destroy(gameObject);
     }
     
     // damage to player
