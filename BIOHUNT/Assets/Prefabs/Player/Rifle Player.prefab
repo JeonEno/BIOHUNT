@@ -175,6 +175,8 @@ MonoBehaviour:
   bulletToFire: {fileID: 8277168159427656936, guid: c127484543432ac4286a78ecfc9d72ff, type: 3}
   firePoint: {fileID: 5142774756928819728}
   timeGapShots: 0.1
+  currentClip: 20
+  reloadTime: 2
   anim: {fileID: 5142774756719475306}
 --- !u!1 &5142774756928819729
 GameObject:
@@ -232,7 +234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5142774756975480699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.271, y: -0.034, z: 0}
+  m_LocalPosition: {x: 0.29, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

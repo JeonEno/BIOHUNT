@@ -7,20 +7,25 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
+    [Header("Movement")]
     public float moveSpeed;
     private Vector2 moveInput;
-
+    
+    [Header("Component")]
     public Rigidbody2D rb2D;
-
     public Transform gunPivot;
-
     private Camera theCam;
 
+    [Header("Shooting")]
     public GameObject bulletToFire;
     public Transform firePoint;
     public float timeGapShots;
     private float shotCounter;
+    public int currentClip = 20; 
+    private int maxClip = 20;
+    public float reloadTime = 3f;
 
+    [Header("Animation")]
     public Animator anim;
 
     private void Awake() 
@@ -34,6 +39,19 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
+    {
+        Movement();
+
+        PlayerShooting();
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(Reload());
+
+            return;
+        }
+    }
+    public void Movement()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
@@ -70,9 +88,12 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("isMoving", false);
         }
+    }
 
-        //fire Bullet
-        if(Input.GetMouseButtonDown(0))
+    public void PlayerShooting()
+    {
+        // fire Bullet
+        if(currentClip > 0 && Input.GetMouseButtonDown(0))
         {
             shotCounter -= Time.deltaTime;
 
@@ -80,11 +101,12 @@ public class PlayerController : MonoBehaviour
             {
                 Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
                 shotCounter = timeGapShots;
+                currentClip -= 1;
             }
         }
 
         //Time gap between shots fire
-        if(Input.GetMouseButton(0))
+        if(currentClip > 0 && Input.GetMouseButton(0))
         {
             if(moveInput != Vector2.zero)
             {
@@ -106,6 +128,7 @@ public class PlayerController : MonoBehaviour
             {
                 Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
                 shotCounter = timeGapShots;
+                currentClip -= 1;
             }
         }
         else
@@ -113,5 +136,11 @@ public class PlayerController : MonoBehaviour
             // anim.SetBool("isMoving", true);
             anim.SetBool("isShooting", false);
         }
+    }
+    IEnumerator Reload()
+    {
+        yield return new WaitForSeconds (reloadTime);
+
+        currentClip = maxClip;
     }
 }
