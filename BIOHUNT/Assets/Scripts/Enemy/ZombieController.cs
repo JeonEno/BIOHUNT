@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ZombieController : MonoBehaviour
 {
+    public static ZombieController instance;
     [Header("Component")]
     public Rigidbody2D theRB;
 
@@ -23,6 +24,10 @@ public class ZombieController : MonoBehaviour
     // private float damageTimer = 0f;
 
     // Start is called before the first frame update
+    private void Awake() 
+    {
+        instance = this;
+    }
     void Start()
     {
         
@@ -71,7 +76,7 @@ public class ZombieController : MonoBehaviour
         if(health <= 0)
         {
             moveSpeed = 0;
-            anim.SetTrigger("isDead");
+            anim.SetTrigger("isZomDead");
         }
     }
     
