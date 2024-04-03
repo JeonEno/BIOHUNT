@@ -21,8 +21,6 @@ public class ZombieController : MonoBehaviour
 
     [Header("Health")]
     public int health = 150;
-    // public float damageInterval = 1f; // Interval between each damage to the player
-    // private float damageTimer = 0f;
 
     // Start is called before the first frame update
     private void Awake() 
