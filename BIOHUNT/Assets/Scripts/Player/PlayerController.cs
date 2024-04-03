@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public Transform firePoint;
     public float timeGapShots;
     private float shotCounter;
-    private int currentClip; 
+    public int currentClip; 
     public int maxClip = 20;
     public float reloadTime = 3f;
 
@@ -39,16 +39,26 @@ public class PlayerController : MonoBehaviour
         currentClip = maxClip;
     }
 
-    void Update()
+    void FixedUpdate() 
     {
         Movement();
 
-        PlayerShooting();
-
+        PlayerShooting();        
+    }
+    void Update()
+    {   
+        //reload system
         if(Input.GetKeyDown(KeyCode.R))
         {
-            StartCoroutine(Reload());
-            return;
+            if(Input.GetMouseButton(0)||Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("player is now shooting");
+            }
+            else
+            {
+                StartCoroutine(Reload());
+                return;
+            }
         }
     }
     public void Movement()
@@ -141,7 +151,6 @@ public class PlayerController : MonoBehaviour
     IEnumerator Reload()
     {
         yield return new WaitForSeconds (reloadTime);
-
         currentClip = maxClip;
     }
 }
