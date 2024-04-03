@@ -19,7 +19,8 @@ public class AfterDead : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        ZombieController.instance.gameObject.SetActive(false);
+        PlayerController.instance.gameObject.SetActive(false);
+        //Destroy(PlayerController.instance.gameObject);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
