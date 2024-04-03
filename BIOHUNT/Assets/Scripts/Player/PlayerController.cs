@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
     public Transform firePoint;
     public float timeGapShots;
     private float shotCounter;
-    public int currentClip = 20; 
-    private int maxClip = 20;
+    private int currentClip; 
+    public int maxClip = 20;
     public float reloadTime = 3f;
 
     [Header("Animation")]
@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         theCam = Camera.main;
+        currentClip = maxClip;
     }
 
     void Update()

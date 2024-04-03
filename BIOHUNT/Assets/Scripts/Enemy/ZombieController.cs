@@ -76,6 +76,8 @@ public class ZombieController : MonoBehaviour
         {
             moveSpeed = 0;
             anim.SetTrigger("isZomDead");
+            // disable collider after zom dead
+            instance.GetComponent<Collider2D>().enabled = false;
             StartCoroutine(WaitForDead());
         }
     }
