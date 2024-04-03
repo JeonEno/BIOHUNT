@@ -47,7 +47,6 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R))
         {
             StartCoroutine(Reload());
-
             return;
         }
     }
@@ -137,6 +136,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isShooting", false);
         }
     }
+    
     IEnumerator Reload()
     {
         yield return new WaitForSeconds (reloadTime);
