@@ -33,7 +33,7 @@ public class ZombieController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(PlayerHealthManager.instance.currentHealth >= 0 && Vector3.Distance(transform.position, PlayerController.instance.transform.position) < rangeToChasePlayer)
         {
@@ -76,7 +76,7 @@ public class ZombieController : MonoBehaviour
         {
             moveSpeed = 0;
             anim.SetTrigger("isZomDead");
-            // disable collider after zom dead
+            // disable collider after zom died
             gameObject.GetComponent<Collider2D>().enabled = false;
             StartCoroutine(WaitForDead());
         }

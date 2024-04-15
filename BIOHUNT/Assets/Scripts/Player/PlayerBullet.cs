@@ -14,7 +14,7 @@ public class PlayerBullet : MonoBehaviour
     public int damageOfBullet = 50;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // about bullet movement
         bulletRB.velocity = transform.right * bulletSpeed;
