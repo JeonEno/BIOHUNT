@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
             else
             {
                 StartCoroutine(Reload());
+                Debug.Log("Reloading...");
                 return;
             }
         }

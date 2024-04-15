@@ -7371,7 +7371,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 3950b266771d6f948ab26dc49741eb7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7458,13 +7458,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416202467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.4, y: -6.5, z: -10}
+  m_LocalPosition: {x: 17.5, y: -40.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1444471754}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -7544,7 +7544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.4, y: -6.5, z: -10}
+  m_LocalPosition: {x: 17.5, y: -40.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26012,25 +26012,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5142774756719475296, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
-      propertyPath: timeGapShots
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475297, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_Name
       value: Rifle Player
       objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.4
+      value: 17.5
       objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.5
+      value: -40.58
       objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26063,10 +26059,6 @@ PrefabInstance:
     - target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142774756975480697, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
