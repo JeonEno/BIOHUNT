@@ -41,7 +41,7 @@ public class PlayerHealthManager : MonoBehaviour
     {
         if(invinceCount <= 0)
         {
-            currentHealth -= 20;
+            currentHealth -= 25;
 
             invinceCount = damageInvinceLenght;
         
