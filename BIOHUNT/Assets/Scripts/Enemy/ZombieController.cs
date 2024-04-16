@@ -6,6 +6,7 @@ using UnityEngine;
 public class ZombieController : MonoBehaviour
 {
     public static ZombieController instance;
+
     [Header("Component")]
     public Rigidbody2D theRB;
 
@@ -21,6 +22,7 @@ public class ZombieController : MonoBehaviour
 
     [Header("Health")]
     public int health = 150;
+
 
     // Start is called before the first frame update
     private void Awake() 
@@ -89,11 +91,16 @@ public class ZombieController : MonoBehaviour
     }
     
     // damage to player
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerHealthManager.instance.DamagePlayer();
+            DamagePlayer();
         }
+    }
+
+    private void DamagePlayer()
+    {
+        PlayerHealthManager.instance.DamagePlayer();
     }
 }
