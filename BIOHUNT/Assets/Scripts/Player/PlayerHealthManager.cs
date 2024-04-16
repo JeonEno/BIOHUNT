@@ -10,6 +10,11 @@ public class PlayerHealthManager : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
 
+    [Header("Invinceble")]
+    public float damageInvinceLenght = 1f;
+    private float invinceCount;
+
+
     private void Awake() 
     {
         instance = this;
@@ -26,21 +31,29 @@ public class PlayerHealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(invinceCount > 0)
+        {
+            invinceCount -= Time.deltaTime;
+        }
     }
 
     public void DamagePlayer()
     {
-        currentHealth -= 30;
-        
-        if(currentHealth <= 0)
+        if(invinceCount <= 0)
         {
-            //PlayerController.instance.gameObject.SetActive(false);
-            PlayerController.instance.anim.SetTrigger("isDead");
-            PlayerController.instance.moveSpeed = 0;
-        }
+            currentHealth -= 20;
 
-        UIController.instance.healthSlider.maxValue = maxHealth;
-        UIController.instance.healthSlider.value = currentHealth;
+            invinceCount = damageInvinceLenght;
+        
+            if(currentHealth <= 0)
+            {
+                //PlayerController.instance.gameObject.SetActive(false);
+                PlayerController.instance.anim.SetTrigger("isDead");
+                PlayerController.instance.moveSpeed = 0;
+            }
+
+            UIController.instance.healthSlider.maxValue = maxHealth;
+            UIController.instance.healthSlider.value = currentHealth;
+        }
     }
 }
