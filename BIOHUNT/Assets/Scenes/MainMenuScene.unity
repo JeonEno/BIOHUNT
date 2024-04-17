@@ -1329,7 +1329,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 973252239}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: NewGameButton
+        m_MethodName: SettingButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1463,7 +1463,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 973252239}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: NewGameButton
+        m_MethodName: ExitGameButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
