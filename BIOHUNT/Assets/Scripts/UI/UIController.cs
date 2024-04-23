@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
     public static UIController instance;
-    [Header("About Health")]
+
+    [Header("Health")]
     public Slider healthSlider;
-    
+    [Header("Ammo")]
+    public TextMeshProUGUI ammoText;
+    [Header("Special Pop UI")]
     public GameObject deathScreen;
+    public GameObject reloadMessage;
 
     private void Awake() 
     {

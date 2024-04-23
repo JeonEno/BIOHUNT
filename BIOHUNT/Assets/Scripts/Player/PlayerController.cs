@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     {
         theCam = Camera.main;
         currentClip = maxClip;
+
+        UIController.instance.ammoText.text = currentClip.ToString() + "/" + maxClip.ToString();
     }
 
     void FixedUpdate() 
@@ -61,6 +63,8 @@ public class PlayerController : MonoBehaviour
                 return;
             }
         }
+
+
     }
     public void Movement()
     {
@@ -147,6 +151,17 @@ public class PlayerController : MonoBehaviour
             // anim.SetBool("isMoving", true);
             anim.SetBool("isShooting", false);
         }
+
+        if(currentClip == 0)
+        {
+            UIController.instance.reloadMessage.SetActive(true);
+        }
+        else
+        {
+            UIController.instance.reloadMessage.SetActive(false);
+        }
+
+        UIController.instance.ammoText.text = currentClip.ToString() + "/" + maxClip.ToString();
     }
     
     IEnumerator Reload()

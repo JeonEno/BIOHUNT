@@ -52,8 +52,8 @@ public class PlayerHealthManager : MonoBehaviour
                 PlayerController.instance.moveSpeed = 0;
 
                 UIController.instance.deathScreen.SetActive(true);
+                Cursor.visible = true;
             }
-
             UIController.instance.healthSlider.maxValue = maxHealth;
             UIController.instance.healthSlider.value = currentHealth;
         }
