@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -321743573, guid: 3a5230d4bedba4b4391bb2769971dbc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -175,6 +175,7 @@ MonoBehaviour:
   bulletToFire: {fileID: 8277168159427656936, guid: c127484543432ac4286a78ecfc9d72ff, type: 3}
   firePoint: {fileID: 5142774756928819728}
   timeGapShots: 0.12
+  currentClip: 0
   maxClip: 30
   reloadTime: 2
   anim: {fileID: 5142774756719475306}
@@ -282,7 +283,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 214f1fed59a27b243a526a85e61dfdf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
