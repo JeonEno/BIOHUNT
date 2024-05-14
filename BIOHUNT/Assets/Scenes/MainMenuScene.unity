@@ -288,7 +288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOAD GAME
+  m_text: RESUME GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 261e88267b8f5c045bd8191584d62a3d, type: 2}
   m_sharedMaterial: {fileID: -5968798469257832986, guid: 261e88267b8f5c045bd8191584d62a3d, type: 2}
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 424398203}
   - component: {fileID: 424398202}
   m_Layer: 5
-  m_Name: Load Game
+  m_Name: Resume Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
