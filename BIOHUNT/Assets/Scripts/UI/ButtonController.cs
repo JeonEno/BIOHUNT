@@ -11,10 +11,10 @@ public class ButtonController : MonoBehaviour
         SceneManager.LoadScene(2);
     }
     
-    public void ExitGameButton()
-    {
-        UnityEditor.EditorApplication.isPlaying = false;
-    }
+    // public void ExitGameButton()
+    // {
+    //     UnityEditor.EditorApplication.isPlaying = false;
+    // }
 
     public void SettingButton()
     {
