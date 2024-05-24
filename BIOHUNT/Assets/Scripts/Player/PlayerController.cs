@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -64,6 +65,18 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // Run or Walk
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            moveSpeed = 8;
+            anim.SetBool("isRunning", true);
+        }
+        else if(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            moveSpeed = 5;
+            anim.SetBool("isRunning", false);
+            anim.SetBool("isMoving", true);
+        }
     }
     public void Movement()
     {
@@ -122,19 +135,19 @@ public class PlayerController : MonoBehaviour
         //Time gap between shots fire
         if(currentClip > 0 && Input.GetMouseButton(0))
         {
-            if(moveInput != Vector2.zero)
-            {
-                anim.SetBool("isMoving", false);
-                anim.SetBool("isShooting", true);
-            }
-            else
-            {
-                anim.SetBool("isShooting", false);
-            }
+            // if(moveInput != Vector2.zero)
+            // {
+            //     anim.SetBool("isMoving", false);
+            //     anim.SetBool("isShooting", true);
+            // }
+            // else
+            // {
+            //     anim.SetBool("isShooting", false);
+            // }
 
-            float moveSpeed = 2f;
+            // float moveSpeed = 2f;
             
-            rb2D.velocity = moveInput * moveSpeed;
+            // rb2D.velocity = moveInput * moveSpeed;
 
             shotCounter -= Time.deltaTime;
 
@@ -147,8 +160,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // anim.SetBool("isMoving", true);
-            anim.SetBool("isShooting", false);
+            // // anim.SetBool("isMoving", true);
+            // anim.SetBool("isShooting", false);
         }
 
         if(currentClip == 0)

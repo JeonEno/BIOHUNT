@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isMoving
+    m_ConditionEvent: isRunning
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -806717877302134413}
@@ -33,8 +33,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isShooting
+  - m_ConditionMode: 1
+    m_ConditionEvent: isRunning
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7871650782885770818}
@@ -84,7 +84,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isShooting
+    m_ConditionEvent: isMoving
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -806717877302134413}
@@ -158,8 +158,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: isShooting
+  - m_ConditionMode: 2
+    m_ConditionEvent: isRunning
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3807876394163385365}
@@ -184,7 +184,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isMoving
+    m_ConditionEvent: isRunning
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7871650782885770818}
@@ -290,7 +290,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: isShooting
+  - m_Name: isRunning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -324,7 +324,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isShooting
+    m_ConditionEvent: isMoving
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3807876394163385365}

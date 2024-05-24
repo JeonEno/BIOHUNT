@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5105264654701116199}
   - component: {fileID: 5105264654701116198}
+  - component: {fileID: 5105264654701116216}
   - component: {fileID: 5105264654701116197}
   - component: {fileID: 5105264654701116196}
   - component: {fileID: 5105264654701116195}
-  - component: {fileID: 5105264654701116216}
+  - component: {fileID: 4211064051085093621}
   m_Layer: 9
   m_Name: RunZom
   m_TagString: Enemy
@@ -88,6 +89,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5105264654701116216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105264654701116194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c83ebbae9b47de4a9160e2a84374a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theRB: {fileID: 5105264654701116197}
+  agent: {fileID: 4211064051085093621}
+  rangeToChasePlayer: 15
+  spRenderer: {fileID: 5105264654701116198}
+  target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
+  anim: {fileID: 5105264654701116195}
+  gotHitEffect: {fileID: 1394904678961071107, guid: 79fe5790ff6b3f443bdb5e56b2cbc802, type: 3}
+  health: 150
 --- !u!50 &5105264654701116197
 Rigidbody2D:
   serializedVersion: 4
@@ -96,7 +117,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5105264654701116194}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -156,22 +177,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5105264654701116216
-MonoBehaviour:
+--- !u!195 &4211064051085093621
+NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5105264654701116194}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c83ebbae9b47de4a9160e2a84374a1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theRB: {fileID: 5105264654701116197}
-  moveSpeed: 5
-  rangeToChasePlayer: 12
-  spRenderer: {fileID: 5105264654701116198}
-  anim: {fileID: 5105264654701116195}
-  gotHitEffect: {fileID: 1394904678961071107, guid: 79fe5790ff6b3f443bdb5e56b2cbc802, type: 3}
-  health: 150
+  m_AgentTypeID: 0
+  m_Radius: 0.3
+  m_Speed: 5
+  m_Acceleration: 10
+  avoidancePriority: 50
+  m_AngularSpeed: 200
+  m_StoppingDistance: 1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

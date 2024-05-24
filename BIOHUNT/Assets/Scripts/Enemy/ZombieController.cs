@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ZombieController : MonoBehaviour
 {
@@ -9,12 +10,14 @@ public class ZombieController : MonoBehaviour
 
     [Header("Component")]
     public Rigidbody2D theRB;
+    public NavMeshAgent agent;
 
     [Header("Movement Value")]
-    public float moveSpeed;
+    //public float moveSpeed;
+    //private Vector3 moveDirection;
     public float rangeToChasePlayer;
-    private Vector3 moveDirection;
     public SpriteRenderer spRenderer;
+    public Transform target;
 
     [Header("Animation & Effect")]
     public Animator anim;
@@ -31,7 +34,11 @@ public class ZombieController : MonoBehaviour
     }
     void Start()
     {
-        
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+
+        var agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+		agent.updateRotation = false;
+		agent.updateUpAxis = false;
     }
 
     // Update is called once per frame
@@ -39,25 +46,24 @@ public class ZombieController : MonoBehaviour
     {
         if(PlayerHealthManager.instance.currentHealth >= 0 && Vector3.Distance(transform.position, PlayerController.instance.transform.position) < rangeToChasePlayer)
         {
-            moveDirection = PlayerController.instance.transform.position - transform.position;
-
-            // flip zombie sprite to face forward where they move
-            if (moveDirection.x > 0)
-                spRenderer.flipX = false; // Face right
-            else if (moveDirection.x < 0)
-                spRenderer.flipX = true; // Face left
+            //moveDirection = PlayerController.instance.transform.position - transform.position;  
+            agent.SetDestination(target.position);
+            
+            if(health > 0)
+            {
+                flipSprite();
+            }
         }
         else
         {
-            moveDirection = Vector3.zero;
+            agent.velocity = Vector3.zero;
         }
 
-        moveDirection.Normalize();
-
-        theRB.velocity = moveDirection * moveSpeed;
+        // moveDirection.Normalize();
+        // theRB.velocity = moveDirection * moveSpeed;
 
         // move animation
-        if(moveDirection != Vector3.zero)
+        if(agent.velocity != Vector3.zero)
         {
             anim.SetBool("isMoving", true);
         }
@@ -74,10 +80,11 @@ public class ZombieController : MonoBehaviour
 
         Instantiate(gotHitEffect, transform.position, transform.rotation);
 
-        if(health <= 0)
+        if(health < 0)
         {
-            moveSpeed = 0;
+            agent.speed = 0;
             anim.SetTrigger("isZomDead");
+
             // disable collider after zom died
             gameObject.GetComponent<Collider2D>().enabled = false;
             StartCoroutine(WaitForDead());
@@ -102,5 +109,13 @@ public class ZombieController : MonoBehaviour
     private void DamagePlayer()
     {
         PlayerHealthManager.instance.DamagePlayer();
+    }
+
+    void flipSprite() //flip zombies sprite head to player location
+    {
+        if (target.transform.position.x > transform.position.x)
+            spRenderer.flipX = false; // Face right
+        else
+            spRenderer.flipX = true; // Face left
     }
 }
