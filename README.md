@@ -1,17 +1,28 @@
 <p align="center">
-  <img src=/>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Chakra+Petch&weight=9000&size=35&pause=1000&color=AED984&center=true&vCenter=true&random=false&width=500&lines=Welcome+to+PROJECT%3ABIOHUNT" alt="Typing SVG" /></a>
 
 <p align="center">
-  <strong>Welcome to PROJECT:BIOHUNT</strong>
-
-  <img width="704" alt="In Game screenshot" src="">
+<img width=800" alt="MainmenuScreenShot" src="https://github.com/JeonEno/BIOHUNT/assets/109717235/25099674-19b5-4be8-bfe9-42cee88f23bb">
 </p>
+
+<p align="center">
+  <strong>InGame Image<strong>
+<p align="center">
+  <img width="500" alt="In Game Screenshot" src="https://github.com/JeonEno/BIOHUNT/assets/109717235/f10ba820-4a0c-4009-b921-25f7354a5ccd">
+<p align="center">
+  <img width="500" alt="InGame(Tutorial)" src="https://github.com/JeonEno/BIOHUNT/assets/109717235/0d7de20c-f4bb-4bf2-b49b-3dbb6728e3b4">
+<p align="center">
+  <img width="500" alt="IngameAfterDead" src="https://github.com/JeonEno/BIOHUNT/assets/109717235/16eb714f-42f1-4f52-816e-57dbcb3a60ac">
+</p>
+
+
 
 ## Overview
 
-- Title
-- Genre
-- Platform
+- Title : BIOHUNT
+- Genre : Loot Shooter, Adventure
+- Platform : PC
+- Engine : UNITY
 
 ### Stroy Synopsis
 
