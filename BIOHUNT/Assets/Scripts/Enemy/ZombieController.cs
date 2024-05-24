@@ -48,12 +48,11 @@ public class ZombieController : MonoBehaviour
         {
             //moveDirection = PlayerController.instance.transform.position - transform.position;  
             agent.SetDestination(target.position);
-
-            // flip zombie sprite to face forward where they move
-            if (target.transform.position.x > transform.position.x)
-                spRenderer.flipX = false; // Face right
-            else
-                spRenderer.flipX = true; // Face left
+            
+            if(health > 0)
+            {
+                flipSprite();
+            }
         }
         else
         {
@@ -85,6 +84,7 @@ public class ZombieController : MonoBehaviour
         {
             agent.speed = 0;
             anim.SetTrigger("isZomDead");
+
             // disable collider after zom died
             gameObject.GetComponent<Collider2D>().enabled = false;
             StartCoroutine(WaitForDead());
@@ -109,5 +109,13 @@ public class ZombieController : MonoBehaviour
     private void DamagePlayer()
     {
         PlayerHealthManager.instance.DamagePlayer();
+    }
+
+    void flipSprite() //flip zombies sprite head to player location
+    {
+        if (target.transform.position.x > transform.position.x)
+            spRenderer.flipX = false; // Face right
+        else
+            spRenderer.flipX = true; // Face left
     }
 }

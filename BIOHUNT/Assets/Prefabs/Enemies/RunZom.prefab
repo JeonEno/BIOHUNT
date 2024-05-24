@@ -103,7 +103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theRB: {fileID: 5105264654701116197}
   agent: {fileID: 4211064051085093621}
-  moveSpeed: 5
   rangeToChasePlayer: 15
   spRenderer: {fileID: 5105264654701116198}
   target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
