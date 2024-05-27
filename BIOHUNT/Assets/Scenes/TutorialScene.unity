@@ -168,6 +168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RunZom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5105264654701116199, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -231,11 +235,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.57
+      value: -6.88
       objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.56
+      value: 2.36
       objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475300, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -809,6 +813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RunZom (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5105264654701116199, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -865,6 +873,10 @@ PrefabInstance:
     - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_Name
       value: WalkZom (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8657765386556110407, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_RootOrder
@@ -1270,6 +1282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RunZom (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5105264654701116199, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1380,7 +1396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416202467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.57, y: 1.56, z: -10}
+  m_LocalPosition: {x: -6.88, y: 2.36, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1470,6 +1486,10 @@ PrefabInstance:
     - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_Name
       value: RunZom (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5105264654701116199, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_RootOrder
@@ -1595,7 +1615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.57, y: 1.56, z: -10}
+  m_LocalPosition: {x: -6.88, y: 2.36, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1743,6 +1763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkZom (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8657765386556110407, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1799,6 +1823,10 @@ PrefabInstance:
     - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_Name
       value: RunZom (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5105264654701116199, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_RootOrder
@@ -22679,6 +22707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkZom
       objectReference: {fileID: 0}
+    - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8657765386556110407, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -23495,6 +23527,10 @@ PrefabInstance:
     - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_Name
       value: RunZom (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5105264654701116199, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_RootOrder
@@ -24787,6 +24823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkZom (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8657765386556110407, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -24848,6 +24888,10 @@ PrefabInstance:
     - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_Name
       value: RunZom
+      objectReference: {fileID: 0}
+    - target: {fileID: 5105264654701116194, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5105264654701116199, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
       propertyPath: m_RootOrder
@@ -33192,6 +33236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkZom (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8657765386556110407, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -34153,6 +34201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkZom (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8657765386556110407, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -34376,6 +34428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkZom (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8657765386556110407, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -34437,6 +34493,10 @@ PrefabInstance:
     - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_Name
       value: WalkZom (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657765386556110406, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8657765386556110407, guid: 833f8164546a2d3439e123eabc18c909, type: 3}
       propertyPath: m_RootOrder

@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public int currentClip; 
     public int maxClip = 20;
     public float reloadTime = 3f;
+    public float shakeIntensity = 4f;
 
     [Header("Animation")]
     public Animator anim;
@@ -129,6 +130,8 @@ public class PlayerController : MonoBehaviour
                 Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
                 shotCounter = timeGapShots;
                 currentClip -= 1;
+
+                CinemachineShake.Instance.ShakeCamera(shakeIntensity, 0.1f);
             }
         }
 
@@ -156,6 +159,8 @@ public class PlayerController : MonoBehaviour
                 Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
                 shotCounter = timeGapShots;
                 currentClip -= 1;
+
+                CinemachineShake.Instance.ShakeCamera(shakeIntensity, 0.1f);
             }
         }
         else
