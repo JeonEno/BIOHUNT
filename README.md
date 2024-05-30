@@ -5,8 +5,10 @@
 <img width=800" alt="MainmenuScreenShot" src="https://github.com/JeonEno/BIOHUNT/assets/109717235/25099674-19b5-4be8-bfe9-42cee88f23bb">
 </p>
 
+----
 <p align="center">
-  <strong>InGame Image<strong>
+<strong>Ingame Image</strong>
+
 <p align="center">
   <img width="500" alt="In Game Screenshot" src="https://github.com/JeonEno/BIOHUNT/assets/109717235/f10ba820-4a0c-4009-b921-25f7354a5ccd">
 <p align="center">
@@ -16,23 +18,23 @@
 </p>
 
 
-
-## Overview
+# Overview
 
 - Title : BIOHUNT
 - Genre : Loot Shooter, Adventure
 - Platform : PC
 - Engine : UNITY
 
-### Stroy Synopsis
+## Stroy Synopsis
 
 - In a world where the zombie virus has spread, the Player, a member of the World Union's regular army, the Peacemakers, went out on a mission one day as usual. However, as the zombies swarmed, he retreated and fled into the subway. During his escape, he fell onto the tracks and lost consciousness...
 
-## Recommended Specs
+
+# Recommended Specs
 
 -
 
-## Project Status
+# Project Status
 
 - Player
   - [x] Basic Movement (Run, Walk)
@@ -64,4 +66,4 @@
   - [x] Shelter
   - [ ] Main Field
 
-## Project Team Member
+# Project Team Member
