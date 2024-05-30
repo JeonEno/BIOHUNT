@@ -48,12 +48,12 @@
   - [ ] Trading
   - [ ] Quest
   - [ ] Dialog Interaction
-  - [ ] Walking around
+  - [ ] Animation
 - UI
   - [x] Main Menu
-  - [ ] Setting Menu
+  - [x] Setting Menu
   - [x] HealthBar, Crosshair
-  - [ ] Max & Current Clip
+  - [x] Max & Current Clip
   - [ ] Inventory
 - System
   - [ ] Items
