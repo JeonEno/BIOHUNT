@@ -41,6 +41,7 @@
   - [x] Shooting (Rifle Only)
   - [x] Health and stats
   - [ ] Inventory
+  - [x] MuzzleFlash
 - Enemy
   - [x] Basic Movement & Path Finding
   - [x] Damage System (Interact with Player Health Script)
