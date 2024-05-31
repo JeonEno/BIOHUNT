@@ -8,6 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
+
     [Header("Movement")]
     public float moveSpeed;
     private Vector2 moveInput;
@@ -47,36 +48,13 @@ public class PlayerController : MonoBehaviour
     {
         Movement();
 
-        PlayerShooting();        
+        PlayerShooting();    
     }
     void Update()
     {   
-        //reload system
         if(Input.GetKeyDown(KeyCode.R))
         {
-            if(Input.GetMouseButton(0)||Input.GetMouseButtonDown(0))
-            {
-                Debug.Log("player is now shooting");
-            }
-            else
-            {
-                StartCoroutine(Reload());
-                Debug.Log("Reloading...");
-                return;
-            }
-        }
-
-        // Run or Walk
-        if(Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            moveSpeed = 8;
-            anim.SetBool("isRunning", true);
-        }
-        else if(Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            moveSpeed = 5;
-            anim.SetBool("isRunning", false);
-            anim.SetBool("isMoving", true);
+            ReloadClip();    
         }
     }
     public void Movement()
@@ -108,6 +86,18 @@ public class PlayerController : MonoBehaviour
         float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
         gunPivot.rotation = Quaternion.Euler(0, 0, angle);
 
+        // Player Run
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            moveSpeed = 7;
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            moveSpeed = 5;
+            anim.SetBool("isRunning", false);
+        }
+        // Walk or Idle anim
         if(moveInput != Vector2.zero)
         {
             anim.SetBool("isMoving", true);
@@ -120,53 +110,21 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerShooting()
     {
-        // fire Bullet
-        if(currentClip > 0 && Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButton(0) || Input.GetMouseButton(0))
         {
-            shotCounter -= Time.deltaTime;
-
-            if(shotCounter <= 0)
+            if(currentClip > 0)
             {
-                Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
-                shotCounter = timeGapShots;
-                currentClip -= 1;
+                shotCounter -= Time.deltaTime;
 
-                CinemachineShake.Instance.ShakeCamera(shakeIntensity, 0.1f);
+                if(shotCounter <= 0)
+                {
+                    Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
+                    shotCounter = timeGapShots;
+                    currentClip -= 1;
+
+                    CinemachineShake.Instance.ShakeCamera(shakeIntensity, 0.06f);
+                }
             }
-        }
-
-        //Time gap between shots fire
-        if(currentClip > 0 && Input.GetMouseButton(0))
-        {
-            // if(moveInput != Vector2.zero)
-            // {
-            //     anim.SetBool("isMoving", false);
-            //     anim.SetBool("isShooting", true);
-            // }
-            // else
-            // {
-            //     anim.SetBool("isShooting", false);
-            // }
-
-            // float moveSpeed = 2f;
-            
-            // rb2D.velocity = moveInput * moveSpeed;
-
-            shotCounter -= Time.deltaTime;
-
-            if(shotCounter <= 0)
-            {
-                Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
-                shotCounter = timeGapShots;
-                currentClip -= 1;
-
-                CinemachineShake.Instance.ShakeCamera(shakeIntensity, 0.1f);
-            }
-        }
-        else
-        {
-            // // anim.SetBool("isMoving", true);
-            // anim.SetBool("isShooting", false);
         }
 
         if(currentClip == 0)
@@ -179,6 +137,20 @@ public class PlayerController : MonoBehaviour
         }
 
         UIController.instance.ammoText.text = currentClip.ToString() + "/" + maxClip.ToString();
+    }
+
+    void ReloadClip()
+    {
+        if(Input.GetMouseButton(0)||Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("player is now shooting");
+        }
+        else
+        {
+            StartCoroutine(Reload());
+            Debug.Log("Reloading...");
+            return;
+        }
     }
     
     IEnumerator Reload()
