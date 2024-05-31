@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Animation")]
     public Animator anim;
+    [SerializeField] private Animator _muzzleFlashAnim; 
 
     private void Awake() 
     {
@@ -122,6 +123,7 @@ public class PlayerController : MonoBehaviour
                     shotCounter = timeGapShots;
                     currentClip -= 1;
 
+                    _muzzleFlashAnim.SetTrigger("isShoot");
                     CinemachineShake.Instance.ShakeCamera(shakeIntensity, 0.06f);
                 }
             }
