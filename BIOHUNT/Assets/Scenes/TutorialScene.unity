@@ -225,10 +225,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1762528058490482723, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
-      propertyPath: m_DefaultVelocity.x
-      value: -0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475297, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_Name
       value: Rifle Player
@@ -1449,20 +1445,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 416202467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Script: {fileID: 11500000, guid: cdf3a0a070b3baf43952860a614c48a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ApplyAfter: 2
-  m_ChannelMask: 1
-  m_Gain: 1
-  m_Use2DDistance: 0
-  m_UseCameraSpace: 1
-  m_ReactionSettings:
-    m_SecondaryNoise: {fileID: 0}
-    m_AmplitudeGain: 1
-    m_FrequencyGain: 1
-    m_Duration: 1
-    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &452774632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24831,6 +24816,7 @@ GameObject:
   - component: {fileID: 1444471754}
   - component: {fileID: 1444471757}
   - component: {fileID: 1444471755}
+  - component: {fileID: 1444471758}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -24908,6 +24894,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1444471758
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444471753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 28dc13d7b26fa814c8d7b3883933f285, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 757.6623, y: -851.8772, z: 303.36377}
 --- !u!4 &1454957415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4080120882318445704, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}

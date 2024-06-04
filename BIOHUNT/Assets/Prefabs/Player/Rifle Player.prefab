@@ -199,7 +199,7 @@ MonoBehaviour:
   currentClip: 0
   maxClip: 30
   reloadTime: 2
-  shakeIntensity: 1.5
+  shakeIntensity: 0.8
   anim: {fileID: 5142774756719475306}
   _muzzleFlashAnim: {fileID: 6962733242882832065}
 --- !u!212 &5142774756719475307
