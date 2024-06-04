@@ -199,9 +199,9 @@ MonoBehaviour:
   currentClip: 0
   maxClip: 30
   reloadTime: 2
-  shakeIntensity: 3
-  _muzzleFlashAnim: {fileID: 6962733242882832065}
+  shakeIntensity: 1.5
   anim: {fileID: 5142774756719475306}
+  _muzzleFlashAnim: {fileID: 6962733242882832065}
 --- !u!212 &5142774756719475307
 SpriteRenderer:
   m_ObjectHideFlags: 0
