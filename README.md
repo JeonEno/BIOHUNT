@@ -40,18 +40,18 @@
   - [x] Basic Movement (Run, Walk)
   - [x] Shooting (Rifle Only)
   - [x] Health and stats
-  - [ ] Inventory
   - [x] MuzzleFlash
+  - [ ] Inventory
 - Enemy
   - [x] Basic Movement & Path Finding
   - [x] Damage System (Interact with Player Health Script)
   - [x] Animation
   - [ ] Drop Item
 - NPC
+  - [ ] Animation
   - [ ] Trading
   - [ ] Quest
   - [ ] Dialog Interaction
-  - [ ] Animation
 - UI
   - [x] Main Menu
   - [x] Setting Menu
@@ -65,6 +65,6 @@
 - Field
   - [x] Tutorial Field
   - [x] Shelter
-  - [ ] Main Field
+  - [x] Main Field
 
 # Project Team Member
