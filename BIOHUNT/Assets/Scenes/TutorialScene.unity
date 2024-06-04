@@ -155,7 +155,7 @@ Transform:
   - {fileID: 1000884365}
   - {fileID: 397050643}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &27978558
 PrefabInstance:
@@ -225,6 +225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1762528058490482723, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
+      propertyPath: m_DefaultVelocity.x
+      value: -0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5142774756719475297, guid: 06ee6866a36688545b49ac80f908ab0c, type: 3}
       propertyPath: m_Name
       value: Rifle Player
@@ -465,6 +469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_bench_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7005258533023918508, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
 --- !u!1 &138676726
@@ -513,7 +521,7 @@ Transform:
   - {fileID: 1180579821}
   - {fileID: 1701644918}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &201807734
 GameObject:
@@ -979,6 +987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_bench_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6836507169641880883, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
 --- !u!1 &340101898
@@ -1058,7 +1070,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &359663658
 PrefabInstance:
@@ -1115,6 +1127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bench (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9044667349653089652, guid: bf5e902232b3713428c0f273d68c3194, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf5e902232b3713428c0f273d68c3194, type: 3}
 --- !u!1001 &370567984
@@ -1127,6 +1143,10 @@ PrefabInstance:
     - target: {fileID: 1563641676444425258, guid: a1eab3948c191fb4bab6d3f4bc391c79, type: 3}
       propertyPath: m_Name
       value: broken_vending_machine_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563641676444425258, guid: a1eab3948c191fb4bab6d3f4bc391c79, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2222660426649657105, guid: a1eab3948c191fb4bab6d3f4bc391c79, type: 3}
       propertyPath: m_RootOrder
@@ -1341,9 +1361,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416202469}
-  - component: {fileID: 416202471}
   - component: {fileID: 416202468}
   - component: {fileID: 416202470}
+  - component: {fileID: 416202471}
   m_Layer: 0
   m_Name: Follow Cam
   m_TagString: Untagged
@@ -1396,14 +1416,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416202467}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.52, y: 2.32, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1444471754}
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 699208154}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &416202470
 MonoBehaviour:
@@ -1429,9 +1449,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 416202467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 046cdb3466a583a43ab9ee4750b707b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ApplyAfter: 2
+  m_ChannelMask: 1
+  m_Gain: 1
+  m_Use2DDistance: 0
+  m_UseCameraSpace: 1
+  m_ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &452774632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1486,6 +1517,10 @@ PrefabInstance:
     - target: {fileID: 9044667349653089652, guid: bf5e902232b3713428c0f273d68c3194, type: 3}
       propertyPath: m_Name
       value: bench
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044667349653089652, guid: bf5e902232b3713428c0f273d68c3194, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf5e902232b3713428c0f273d68c3194, type: 3}
@@ -1627,12 +1662,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.52, y: 2.32, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 699208154}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
@@ -1887,6 +1922,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb106eda93dfc9f4cbbdecd56517a453, type: 3}
+--- !u!1 &699208153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699208154}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &699208154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699208153}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 519420032}
+  - {fileID: 416202469}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &803487148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,7 +2056,7 @@ RectTransform:
   - {fileID: 201807737}
   - {fileID: 819959434}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2065,6 +2133,10 @@ PrefabInstance:
     - target: {fileID: 3667965564034687823, guid: 636251ae14c2d724ba5c53e6c205c9fd, type: 3}
       propertyPath: m_Name
       value: broken_bench_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667965564034687823, guid: 636251ae14c2d724ba5c53e6c205c9fd, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 636251ae14c2d724ba5c53e6c205c9fd, type: 3}
@@ -23781,6 +23853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_bench_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7005258533023918508, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
 --- !u!1 &1180579820
@@ -23796,7 +23872,7 @@ GameObject:
   - component: {fileID: 1180579822}
   - component: {fileID: 1180579824}
   - component: {fileID: 1180579825}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Col Obs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24525,6 +24601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_bench_3
       objectReference: {fileID: 0}
+    - target: {fileID: 7005258533023918508, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
 --- !u!4 &1244787870 stripped
@@ -24547,6 +24627,10 @@ PrefabInstance:
     - target: {fileID: 1095393379709752496, guid: 119847e863934c54f878e0a6d0f68a88, type: 3}
       propertyPath: m_Name
       value: broken_vending_machine_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1095393379709752496, guid: 119847e863934c54f878e0a6d0f68a88, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2169971197151329907, guid: 119847e863934c54f878e0a6d0f68a88, type: 3}
       propertyPath: m_RootOrder
@@ -24730,6 +24814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_bench_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7005258533023918508, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
 --- !u!1 &1444471753
@@ -24743,7 +24831,6 @@ GameObject:
   - component: {fileID: 1444471754}
   - component: {fileID: 1444471757}
   - component: {fileID: 1444471755}
-  - component: {fileID: 1444471758}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -24821,23 +24908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1444471758
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444471753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-  m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 0
-  m_FrequencyGain: 1
-  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!4 &1454957415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4080120882318445704, guid: 6e2b9600b6932734e866638a72d087e3, type: 3}
@@ -33372,6 +33442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_bench_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6836507169641880883, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
 --- !u!1 &1701644917
@@ -34214,6 +34288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_bench_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3667965564034687823, guid: 636251ae14c2d724ba5c53e6c205c9fd, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 636251ae14c2d724ba5c53e6c205c9fd, type: 3}
 --- !u!4 &1741896232 stripped
@@ -34330,6 +34408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_vending_machine_4
       objectReference: {fileID: 0}
+    - target: {fileID: 1653354935907955648, guid: bc9076bac133c6c42ad204fff768d320, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3829812904898568285, guid: bc9076bac133c6c42ad204fff768d320, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -34445,6 +34527,10 @@ PrefabInstance:
     - target: {fileID: 6836507169641880883, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
       propertyPath: m_Name
       value: broken_bench_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836507169641880883, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
@@ -34767,6 +34853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: broken_bench_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6836507169641880883, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee17ce69ab03c1f4bbb91052fe1670a1, type: 3}
 --- !u!1 &2124981610
@@ -34950,5 +35040,5 @@ Transform:
   - {fileID: 1934834306}
   - {fileID: 970242101}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
