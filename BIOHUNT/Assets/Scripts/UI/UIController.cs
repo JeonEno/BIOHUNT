@@ -14,7 +14,8 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI ammoText;
     [Header("Special Pop UI")]
     public GameObject deathScreen;
-    public GameObject reloadMessage;
+    public GameObject needReloadMessage;
+    public GameObject nowReloadingMessage;
 
     private void Awake() 
     {

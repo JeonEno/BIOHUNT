@@ -25,41 +25,38 @@ public class PlayerController : MonoBehaviour
     private float shotCounter;
     public int currentClip; 
     public int maxClip = 20;
-    public float reloadTime = 3f;
+    public float reloadTime = 4f;
     public float shakeIntensity = 4f;
+    private bool isReloading = false;
 
     [Header("Animation")]
     public Animator anim;
     [SerializeField] private Animator _muzzleFlashAnim; 
 
-    private void Awake() 
-    {
+    private void Awake(){
         instance = this;
     }
 
-    void Start()
-    {
+    void Start(){
         theCam = Camera.main;
         currentClip = maxClip;
 
         UIController.instance.ammoText.text = currentClip.ToString() + "/" + maxClip.ToString();
     }
 
-    void FixedUpdate() 
-    {
+    void FixedUpdate(){
         Movement();
-
-        PlayerShooting();    
+        if(isReloading == false){
+            PlayerShooting();
+        }    
     }
-    void Update()
-    {   
+    void Update(){   
         if(Input.GetKeyDown(KeyCode.R))
         {
             ReloadClip();    
         }
     }
-    public void Movement()
-    {
+    public void Movement(){
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
@@ -109,8 +106,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void PlayerShooting()
-    {
+    public void PlayerShooting(){
         if(Input.GetMouseButton(0) || Input.GetMouseButton(0))
         {
             if(currentClip > 0)
@@ -131,33 +127,28 @@ public class PlayerController : MonoBehaviour
 
         if(currentClip == 0)
         {
-            UIController.instance.reloadMessage.SetActive(true);
+            UIController.instance.needReloadMessage.SetActive(true);
         }
         else
         {
-            UIController.instance.reloadMessage.SetActive(false);
+            UIController.instance.needReloadMessage.SetActive(false);
         }
 
         UIController.instance.ammoText.text = currentClip.ToString() + "/" + maxClip.ToString();
     }
 
-    void ReloadClip()
-    {
-        if(Input.GetMouseButton(0)||Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("player is now shooting");
-        }
-        else
-        {
-            StartCoroutine(Reload());
-            Debug.Log("Reloading...");
-            return;
-        }
+    void ReloadClip(){
+        UIController.instance.nowReloadingMessage.SetActive(true);
+        Debug.Log("Reloading...");
+        StartCoroutine(Reload());
+        return;
     }
     
-    IEnumerator Reload()
-    {
+    IEnumerator Reload(){
+        isReloading = true;
         yield return new WaitForSeconds (reloadTime);
         currentClip = maxClip;
+        UIController.instance.nowReloadingMessage.SetActive(false);
+        isReloading = false;
     }
 }
